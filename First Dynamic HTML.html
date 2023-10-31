@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		h1 {
+			color: blue;
+			display: flex;
+			justify-content: center;
+		}
+
+		#mybutton1 {
+			display: block;
+			margin: 0 auto;
+		}
+				#innerdiv {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+				}
+	#mybutton2 {
+			display: block;
+			margin: 0 auto;
+		}
+
+		#innerdiv {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		Emmanuel's Profile
+	</h1>
+	<div id="innerdiv"></div>
+
+	<button id="mybutton1">
+		Reveal the Surprise
+	</button>	
+	
+	<button id="mybutton2">
+		More Surprises
+	</button>
+	<script>
+		document.getElementById("mybutton1").
+			addEventListener("click", function () {
+		document.getElementById("innerdiv").
+			innerHTML += 
+			"<h3>My Professional Profile</h3>"
+			;
+		});
+	</script>
+	
+	<script>
+		document.getElementById("mybutton2").
+			addEventListener("click", function () {
+		document.getElementById("innerdiv").
+			innerHTML += 
+			"<h3>Learn More About Me on my LinkedIn</h3>"
+			;
+		})
+		</script>
+</body>
+
+</html>
